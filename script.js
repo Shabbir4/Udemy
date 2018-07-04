@@ -35,11 +35,11 @@ input.addEventListener("keypress", addListAfterKeypress);
 
 
 for(var i = 0; i < list.length; i++) {
-//	var btn = document.createElement("BUTTON");
-//	var t = document.createTextNode("Delete");
-//	btn.appendChild(t);                             
-  //  ul.appendChild(btn); 
-//
+	var btn = document.createElement("BUTTON");
+	var t = document.createTextNode("Delete");
+	btn.appendChild(t);                             
+   ul.appendChild(btn); 
+
    list[i].addEventListener("click", function(e){
     e.currentTarget.classList.toggle("done");
    })
